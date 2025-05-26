@@ -1,0 +1,229 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Más vivo */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Navegación */
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffe600;
+}
+
+/* Redes sociales en header */
+.redes {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.redes a {
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.redes a:hover {
+    color: #ffe600;
+}
+
+.redes a.whatsapp {
+    color: #25D366;
+}
+
+.redes a.whatsapp:hover {
+    color: #1ebe5b;
+}
+
+/* HERO (SOBRE MÍ) */
+.hero {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background-color: #1e1e1e;
+    border-bottom: 2px solid #333;
+}
+
+.foto-perfil {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.hero .resaltado {
+    color: #ffe600;
+    font-weight: bold;
+}
+
+/* PROYECTOS */
+.proyectos {
+    padding: 2rem 1rem;
+    background-color: #181818;
+}
+
+.proyectos h2 {
+    color: #ffe600;
+}
+
+.proyecto-lista {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.proyecto {
+    flex: 1 1 45%;
+    background: #2b2b2b;
+    border: 2px solid transparent;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.proyecto:hover {
+    background: #323232;
+    border-color: #ffe600;
+}
+
+/* CONTACTO */
+.proyectos a {
+    color: #00b7ff;
+    text-decoration: none;
+}
+
+.proyectos a:hover {
+    text-decoration: underline;
+    color: #009ee0;
+}
+
+.whatsapp {
+    color: #25D366;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.whatsapp:hover {
+    text-decoration: underline;
+    color: #1ebe5b;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0e0e0e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* ============================ MEDIA QUERIES ============================ */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .redes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .proyecto-lista {
+        flex-direction: column;
+    }
+
+    .proyecto {
+        flex: 1 1 100%;
+    }
+
+    .header .titulo {
+        font-size: 2rem;
+    }
+
+    .nav a {
+        font-size: 1rem;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .titulo {
+        font-size: 1.6rem;
+    }
+
+    .nav a {
+        font-size: 0.95rem;
+    }
+
+    .redes a {
+        font-size: 20px;
+    }
+
+    .whatsapp {
+        font-size: 16px;
+    }
+}
+
